@@ -1,0 +1,260 @@
+.details-container {
+  width: 60.5vw;
+  margin: 0.88em 0;
+
+  position: relative;
+  .wrap-detail {
+    border-radius: 10px;
+
+    .main-block {
+      height: 97vh;
+      background-color: white;
+      border-radius: 10px;
+      display: grid;
+
+      .cancel {
+        position: absolute;
+        color: #007aff;
+        display: none;
+        top: 2.9em;
+        left: 4vw;
+        line-height: 2.4em;
+        img {
+          height: 2.4em;
+        }
+        span {
+          display: block;
+        }
+      }
+
+      .row-date {
+        font-family: "SFRegular";
+        color: rgba(60, 60, 67, 0.55);
+      }
+
+      .row-info {
+        display: grid;
+        justify-items: center;
+        align-items: flex-end;
+        align-self: center;
+
+        .row-user-name {
+          font-family: "SFMedium";
+          font-size: 2.95em;
+          line-height: 1.2em;
+        }
+
+        .row-position {
+          font-size: 1.77em;
+          color: rgba(60, 60, 67, 0.55);
+          line-height: 1.197em;
+        }
+
+        .row-email {
+          margin-top: 0.6em;
+          color: #007aff;
+          line-height: 1.177em;
+        }
+      }
+
+      .status {
+        border-radius: 5px;
+        align-self: flex-end;
+        padding: 0 0 2% 0;
+        &.status-active {
+          color: #50cc57;
+        }
+        &.status-blocked {
+          color: #f65a73;
+        }
+      }
+    }
+  }
+}
+
+.edit {
+  position: absolute;
+  top: 2.9em;
+  right: 3em;
+  color: #007aff;
+  line-height: 2.4em;
+}
+
+.item-plus-new {
+  position: relative;
+  z-index: 100;
+  right: 2.55em;
+  top: 4.1em;
+  width: 20px;
+  height: 24px;
+
+  &::after,
+  &::before {
+    content: "";
+    width: 3px;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background: #0079fd;
+  }
+  &::after {
+    height: 20px;
+    transform: rotate(90deg);
+  }
+  &::before {
+    height: 24px;
+    bottom: -4px;
+  }
+}
+
+.main-admin-container-disabled {
+  width: 0;
+  .wrap-detail {
+    display: none;
+  }
+  .delete-modal {
+    visibility: hidden;
+  }
+  .edit {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1680px) {
+  .item-plus-new {
+    right: 2.7em;
+    top: 4.2em;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .details-container {
+    width: 58vw;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .details-container {
+    width: 56vw;
+  }
+  .item-plus-new {
+    width: 18px;
+    height: 23px;
+    &::after {
+      height: 17px;
+    }
+    &::before {
+      height: 22px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1049px) {
+  .details-container {
+    width: 67vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .details-container {
+    margin: 0.88em;
+    width: 98vw;
+
+    .wrap-detail {
+      .main-block {
+        height: 97vh;
+
+        .cancel {
+          display: flex;
+        }
+      }
+    }
+  }
+  .item-plus-new {
+    right: 3.1em;
+    top: 4.1em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #details-container-iphone,
+  #details-container-android {
+    .wrap-detail {
+      .main-block {
+        .cancel {
+          left: 1em;
+          line-height: 2em;
+          img {
+            height: 2em;
+          }
+          span {
+            font-size: 0.8em;
+          }
+        }
+        .row-info {
+          .row-user-name {
+            font-size: 2em;
+          }
+        }
+        .status {
+          margin-bottom: 1vh;
+        }
+      }
+    }
+  }
+  #details-container-iphone {
+    .wrap-detail {
+      .main-block {
+        height: 81vh;
+      }
+    }
+  }
+
+  .edit {
+    top: 3.8em;
+    right: 1.8em;
+    font-size: 0.8em;
+    line-height: 2em;
+  }
+  .item-plus-new {
+    right: 2.6em;
+    top: 4.1em;
+  }
+}
+
+@media only screen and (max-height: 515px) {
+  .item-plus-new {
+    right: 2.95em;
+    top: 4.3em;
+  }
+}
+@media only screen and (max-height: 515px) and (max-width: 1440px) {
+  .item-plus-new {
+    right: 2.8em;
+  }
+}
+@media only screen and (max-height: 515px) and (max-width: 1280px) {
+  .item-plus-new {
+    right: 2.7em;
+    top: 4.2em;
+  }
+}
+@media only screen and (max-height: 515px) and (max-width: 1049px) {
+  .item-plus-new {
+    right: 2.6em;
+    top: 4.15em;
+  }
+}
+@media only screen and (max-height: 515px) and (max-width: 850px) {
+  .item-plus-new {
+    right: 2.65em;
+  }
+}
+
+@media only screen and (max-height: 515px) and (max-width: 850px) {
+  .item-plus-new {
+    right: 2.65em;
+  }
+}

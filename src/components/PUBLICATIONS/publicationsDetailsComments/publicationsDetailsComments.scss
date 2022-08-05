@@ -1,0 +1,60 @@
+.publications-details-comments {
+  width: 29.8vw;
+  margin: 0.88em 0 0 0;
+  border-radius: 10px;
+  background-color: white;
+  height: 97vh;
+  position: relative;
+}
+
+.publications-details-replies {
+  margin: 0.88em 0 0 0.88em;
+}
+
+.disabled-reaction {
+  display: none;
+}
+
+@media only screen and (max-width: 1440px) {
+  .publications-details-comments {
+    width: 28.8vw;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .publications-details-comments {
+    width: 27.8vw;
+  }
+  .publications-details-replies {
+    margin: 0.88em 0 0 0.75em;
+  }
+}
+@media only screen and (max-width: 1049px) {
+  .publications-details-comments {
+    width: 33vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .publications-details-comments {
+    margin: 0.88em;
+    width: 48vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .publications-details-comments {
+    width: 47vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .publications-details-comments {
+    width: 98vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #details-container-iphone {
+    height: 81vh;
+  }
+}

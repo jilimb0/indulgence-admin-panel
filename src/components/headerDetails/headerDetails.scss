@@ -1,0 +1,75 @@
+header {
+  // display: grid;
+  // justify-items: center;
+  // padding: 3% 0 0 0;
+  // border-bottom: 1px solid rgba(60, 60, 67, 0.07);
+  // background-color: rgb(247, 247, 247);
+  // border-radius: 10px 10px 0 0;
+  // height: 100px;
+
+  // .text {
+  //   font-family: "SFSemibold";
+  //   margin-bottom: 3%;
+  // }
+
+  // .flex-block {
+  //   display: flex;
+  //   width: 100%;
+  // }
+
+  // .cancel {
+  //   color: #007aff;
+  //   margin: 0 0 9% 6%;
+  //   display: flex;
+  //   span {
+  //     display: block;
+  //     margin: 15% 0 0 30%;
+  //   }
+  // }
+
+  // input {
+  //   background: rgba(60, 60, 67, 0.07);
+  //   background-image: url("./img/search.svg");
+  //   background-position: 17px center;
+  //   background-repeat: no-repeat;
+  //   text-indent: 13%;
+
+  //   border: none;
+  //   width: 80%;
+  //   height: 2em;
+  //   justify-self: left;
+  //   margin-left: 5%;
+
+  //   border-radius: 15px;
+  // }
+
+  // input:focus {
+  //   outline: none;
+  // }
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+  header {
+    input {
+      background-image: url("./img/smallSearch.svg");
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    input {
+      width: 75%;
+    }
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  header {
+    input {
+      background-image: url("./img/smallSearch.svg");
+    }
+  }
+}

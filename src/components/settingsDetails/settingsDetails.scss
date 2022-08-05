@@ -1,0 +1,160 @@
+.settings-details-container {
+  width: 85vw !important;
+  margin: 0.88em !important;
+  .wrap-detail {
+    .main-block {
+      .row-info {
+        padding: 2% 0 0 0;
+      }
+      .buttons-container-settings {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0 0 2% 0;
+      }
+    }
+  }
+}
+
+.modal-settings {
+  .modal-overlay {
+    width: 85vw;
+    margin: 0;
+  }
+  .modal-simple {
+    margin: 0 !important;
+  }
+  .main__block {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+
+    .block {
+      width: 75%;
+      margin: 2.353em 0 0 0;
+    }
+
+    .header {
+      background-color: #007aff;
+      width: 100%;
+      padding: 5% 0;
+      text-align: center;
+      border-radius: 10px 10px 0 0;
+      margin: 0;
+      font-family: "SFSemibold";
+      span {
+        display: block;
+        color: white;
+      }
+    }
+
+    .row-user-name {
+      display: flex;
+      justify-content: space-between;
+      .wrap-first-name,
+      .wrap-last-name {
+        width: 45%;
+      }
+    }
+
+    .row-password-old {
+      margin-top: 3.2em !important;
+    }
+
+    .buttons-container {
+      display: grid;
+      grid-template-areas: "delete cancel save";
+      justify-items: end;
+      &:hover {
+        cursor: pointer;
+      }
+      button {
+        padding: 0 0 15% 0;
+        line-height: 1.5em;
+      }
+
+      .cancel-modal {
+        grid-area: cancel;
+        color: #007aff;
+      }
+      .save {
+        grid-area: save;
+        color: #007aff;
+        font-family: "SFMedium";
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .modal-settings {
+    .modal-simple {
+      width: 34vw !important;
+    }
+  }
+}
+
+@media (max-width: 1049px) {
+  .modal-settings {
+    .main__block {
+      .block {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-height: 515px) {
+  .settings-details-container {
+    .wrap-detail {
+      .main-block {
+        .row-info {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1049px) {
+  .settings-details-container {
+    width: 98vw !important;
+  }
+  .modal-settings {
+    .modal-overlay {
+      height: 97vh;
+      width: 98vw;
+    }
+    .modal-simple {
+      width: 45vw !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .settings-details-container {
+    width: 98vw !important;
+  }
+  .modal-settings {
+    .modal-overlay {
+      height: 105%;
+      width: 100vw;
+      top: -0.88em !important;
+      left: -0.88em;
+      border-radius: 0;
+    }
+    .modal-simple {
+      width: 55vw !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .modal-settings {
+    .modal-simple {
+      width: 75vw !important;
+    }
+  }
+}

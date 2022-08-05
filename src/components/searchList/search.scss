@@ -1,0 +1,155 @@
+.wrap-search,
+.wrap-details-container-header,
+.wrap-message-details-container-header,
+.wrap-comments-header {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 2.9em 3em;
+  border-radius: 10px 10px 0 0;
+  height: 5.9em;
+
+  span {
+    font-family: "SFSemibold";
+  }
+
+  .subtitle-header {
+    align-self: flex-start;
+    line-height: 2.4em;
+  }
+
+  input {
+    align-self: flex-start;
+    background: rgba(60, 60, 67, 0.07);
+    background-image: url("./img/search.svg");
+    background-position: 1.29em center;
+    background-repeat: no-repeat;
+    text-indent: 3.235em;
+
+    border: none;
+    width: 85%;
+    height: 2.4em;
+    justify-self: left;
+    margin-left: 3%;
+
+    border-radius: 30px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+.wrap-search,
+.wrap-message-details-container-header {
+  background-color: rgb(247, 247, 247);
+  border-bottom: 1px solid rgba(60, 60, 67, 0.07);
+}
+
+.item-list {
+  width: 100%;
+  padding-top: 0.5em;
+  border-radius: 0 0 10px 10px;
+}
+
+.user-search,
+.messages-search {
+  input {
+    width: 93%;
+    text-indent: 12%;
+  }
+}
+
+.search-comments {
+  display: flex;
+  width: 100%;
+  align-self: flex-start;
+  input {
+    width: 75.5% !important ;
+    margin: 0 !important;
+  }
+
+  .back {
+    margin: 0 0.88em 0 1.765em;
+    display: flex;
+    align-items: center;
+    line-height: 2em;
+    img {
+      height: 1.765em;
+    }
+    span {
+      margin: 0 0 0 0.3em;
+      color: #0079fd;
+      font-family: "SFRegular";
+      display: inline-block;
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .search-comments {
+    input {
+      width: 70% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .wrap-search {
+    input {
+      background-image: url("./img/smallSearch.svg");
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .wrap-search,
+  .wrap-details-container-header,
+  .wrap-message-details-container-header,
+  .wrap-comments-header {
+    input {
+      width: 87%;
+    }
+  }
+  .search-comments {
+    input {
+      width: 68% !important;
+    }
+  }
+  .user-search,
+  .messages-search {
+    input {
+      width: 94%;
+      text-indent: 12%;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .search-comments {
+    input {
+      width: 82% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .subtitle-header {
+    line-height: 2.05em !important;
+    .date-value {
+      font-size: 0.8em;
+    }
+  }
+  .search-comments {
+    input {
+      width: 68% !important;
+    }
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  .wrap-search {
+    input {
+      background-image: url("./img/smallSearch.svg");
+    }
+  }
+}

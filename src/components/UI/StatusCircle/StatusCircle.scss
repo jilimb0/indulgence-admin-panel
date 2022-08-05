@@ -1,0 +1,33 @@
+.status-circle {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 5;
+  z-index: 500;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  &.status-active {
+    background-color: #50cc57;
+  }
+  &.status-blocked {
+    background-color: #f65a73;
+  }
+}
+
+@media (max-width: 1280px) {
+  .status-circle {
+    height: 29.75px;
+    width: 29.75px;
+  }
+}
+
+@media (max-height: 515px) {
+  .status-circle {
+    height: 17.5px;
+    width: 17.5px;
+    bottom: 5px;
+    right: 5px;
+  }
+}

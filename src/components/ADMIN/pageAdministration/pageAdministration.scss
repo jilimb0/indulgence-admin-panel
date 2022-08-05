@@ -1,0 +1,40 @@
+.search-container {
+  width: 24vw;
+  z-index: 10;
+  margin: 0.88em;
+  background-color: white;
+  border-radius: 10px;
+  height: 97vh;
+  position: relative;
+}
+
+@media (max-width: 1440px) {
+  .search-container {
+    width: 26vw;
+  }
+}
+@media (max-width: 1280px) {
+  .search-container {
+    width: 28vw;
+    margin: 0.88em 0.75em;
+  }
+}
+@media (max-width: 1049px) {
+  .search-container {
+    width: 30vw;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .search-container {
+    width: 98vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #search-container-iphone,
+  #search-container-android {
+  }
+  #search-container-iphone {
+    height: 81vh;
+  }
+}

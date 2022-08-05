@@ -1,0 +1,174 @@
+.message-details-container {
+  .wrap-detail {
+    background-color: white;
+    border-radius: 10px;
+    height: 97vh;
+    margin: 0;
+
+    .wrap-message-details-container-header {
+      width: 100%;
+      justify-items: center;
+
+      .cancel {
+        position: absolute;
+        color: #007aff;
+        display: none;
+        top: 2.9em;
+        left: 1em;
+        line-height: 2.4em;
+        z-index: 10;
+        img {
+          height: 2.4em;
+        }
+        span {
+          display: block;
+          font-family: "SFRegular";
+        }
+      }
+      .info-block {
+        position: relative;
+        width: 100%;
+        align-self: flex-start;
+
+        .text {
+          text-align: center;
+          .user-name {
+            font-family: "SFMedium";
+            line-height: 1.22em;
+          }
+          .row-date {
+            .date-value {
+              margin-top: 0.4em;
+              line-height: 1.22em;
+              color: rgba(60, 60, 67, 0.6);
+              font-family: "SFRegular";
+              font-size: 0.75em;
+            }
+          }
+        }
+        .user-img {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          margin: 0.7vh 0;
+          object-fit: cover;
+          position: absolute;
+          bottom: 0;
+          right: 1em;
+        }
+      }
+    }
+
+    .row-text {
+      margin: 1.77em 0 0 1.5vw;
+
+      .text-value {
+        width: 97%;
+      }
+    }
+
+    .row-link {
+      margin: 1vh 0 0 1.5vw;
+      display: flex;
+      align-items: center;
+      margin-top: 2.5vh;
+      color: #007aff;
+      cursor: pointer;
+
+      .link-title {
+        margin-left: 0.59em;
+        color: #007aff;
+        line-height: 20px;
+      }
+
+      .icon-link {
+        background: url("./img/arrow.svg") no-repeat;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .delete {
+      margin: 2vh 0 0 1.5vw;
+
+      display: flex;
+      align-items: center;
+      span {
+        margin: 0 0 0 0.49em;
+        line-height: 22px;
+        color: #f65a73;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1680px) {
+  .message-details-container {
+    .wrap-detail {
+      .header {
+        height: 83px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .message-details-container {
+    .wrap-detail {
+      .header {
+        height: 76px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .message-details-container {
+    .wrap-detail {
+      .header {
+        height: 71px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1049px) {
+  .message-details-container {
+    .wrap-detail {
+      .header {
+        height: 68px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  .message-details-container {
+    .wrap-detail {
+      .header {
+        height: 60px;
+      }
+      .wrap-message-details-container-header {
+        width: 100%;
+        justify-items: center;
+
+        .cancel {
+          display: flex;
+        }
+      }
+      .row-text {
+        margin: 3vh 0 0 4.5vw;
+      }
+
+      .row-link {
+        margin: 2vh 0 0 4.5vw;
+      }
+
+      .delete {
+        margin: 2vh 0 0 4.5vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #details-container-iphone {
+    height: 81vh;
+  }
+}

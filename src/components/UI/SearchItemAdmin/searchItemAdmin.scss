@@ -1,0 +1,238 @@
+.wrap-item {
+  padding: 0 1.8vw;
+
+  .item-user {
+    display: grid;
+    grid-template: 1fr / 15% 70% 15%;
+
+    align-items: start;
+    padding: 1.17em 0;
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: rgba(60, 60, 67, 0.3);
+      transform: translateX(3vw);
+      bottom: 0.05em;
+      height: 0.05em;
+      width: 22em;
+    }
+
+    .wrap-params {
+      .item-name {
+        color: black;
+        font-family: "SFMedium";
+        font-size: 1em;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .item-subtitle {
+        color: rgba(60, 60, 67, 0.7);
+        font-size: 0.93em;
+        margin: 1.5% 0 0 0;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .params {
+      display: flex;
+      width: 3.5em;
+      height: 1.2em;
+      .status {
+        height: 100%;
+        width: 100%;
+        font-size: 0.765em;
+        display: grid;
+        place-items: center;
+        border-radius: 5px;
+      }
+
+      .status-active {
+        color: #50cc57;
+        border: 1px solid #50cc57;
+      }
+
+      .status-blocked {
+        color: #f65a73;
+        border: 1px solid #f65a73;
+        min-width: 5em;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &.active {
+    cursor: pointer;
+    background-color: #007aff;
+    .item-user {
+      &::after {
+        opacity: 0;
+      }
+      .item-name {
+        color: white;
+      }
+      .item-subtitle {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .params {
+        .status {
+          color: white;
+          border-color: white;
+        }
+      }
+    }
+  }
+}
+
+.item-list {
+  height: calc(97vh - 5.9em);
+  overflow: hidden;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .wrap-item {
+    .item-user {
+      grid-template: 1fr / 18% 67% 15%;
+      &::after {
+        transform: translateX(3.7vw);
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .wrap-item {
+    .item-user {
+      grid-template: 1fr / 18% 67% 15%;
+      &::after {
+        transform: translateX(4vw);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .wrap-item {
+    .item-user {
+      &::after {
+        transform: translateX(4.4vw);
+      }
+      .wrap-user-img {
+        width: 30px;
+        height: 30px;
+        .user-img {
+          max-width: 30px;
+          max-height: 30px;
+        }
+        .lds-dual-ring {
+          &:after {
+            width: 22px;
+            height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1049px) {
+  .wrap-item {
+    .item-user {
+      &::after {
+        transform: translateX(4.7vw);
+      }
+      .wrap-params {
+        .item-name {
+          font-size: 0.9em;
+        }
+        .item-subtitle {
+          font-size: 0.85em;
+        }
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 850px) {
+//   .wrap-item {
+//     padding: 0 3vw 0 2vw;
+
+//     .item-user {
+//       &::after {
+//         transform: translateX(5.7vw);
+//       }
+//       .wrap-params {
+//         .item-name {
+//           font-size: 1em;
+//         }
+
+//         .item-subtitle {
+//           font-size: 0.9em;
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media only screen and (max-width: 850px) {
+  .wrap-item {
+    padding: 0 4vw;
+
+    .item-user {
+      grid-template: 1fr / 10% 80% 10%;
+      &::after {
+        transform: translateX(9vw);
+        width: 50em;
+      }
+      .wrap-params {
+        .item-name {
+          font-size: 1em;
+        }
+
+        .item-subtitle {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .wrap-item {
+    .item-user {
+      grid-template: 1fr / 10% 75% 15%;
+      &::after {
+        transform: translateX(10vw);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .wrap-item {
+    .item-user {
+      .wrap-params {
+        margin-left: 1vw;
+      }
+      .params {
+        .status {
+          min-width: 10vw;
+        }
+      }
+    }
+  }
+  #item-list-iphone {
+    height: calc(81vh - 5.9em);
+  }
+}

@@ -1,0 +1,80 @@
+.user-details-container {
+  .wrap-detail {
+    .header {
+      font-family: "SFSemibold";
+      .column-reg {
+        display: grid;
+        place-items: center;
+        span {
+          margin-bottom: 1vh;
+        }
+        .row-registration {
+          .registration-value {
+            font-family: "SFRegular";
+            opacity: 0.8;
+            color: #454f63;
+            font-size: 0.875em;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 850px) {
+//   .user-details-container {
+//     width: 71vw;
+//     margin: 1%;
+//     .wrap-detail {
+//       height: 98vh;
+//       .header {
+//         .cancel {
+//           display: flex;
+//           top: 4.5vh;
+//           left: 30vw;
+//         }
+//       }
+//       .row-info {
+//         .row-user-name {
+//           font-size: 3vw;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: 500px) {
+//   .user-details-container {
+//     width: 66vw;
+//     .wrap-detail {
+//       height: 84vh;
+//       grid-template: 8vh 68vh 6vh / 1fr;
+//       .header {
+//         .column-reg {
+//           width: 70%;
+//           text-align: center;
+//           span {
+//             margin-bottom: 0.5vh;
+//           }
+//         }
+//         .cancel {
+//           display: flex;
+//           top: 3.25vh;
+//           left: 28.5vw;
+
+//           span {
+//             font-size: 3.85vw;
+//             padding: 0.7vh 0 0 3.5vw;
+//           }
+//         }
+//       }
+//       .row-info {
+//         display: grid;
+//         place-items: center;
+//         .row-user-name {
+//           font-size: 5vw;
+//         }
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,210 @@
+.item-list {
+  .wrap-row {
+    .row {
+      padding: 1vh 0;
+      margin: 0 1.563vw;
+      display: flex;
+      border-bottom: 1px solid rgba(60, 60, 67, 0.3);
+
+      .wrap-content {
+        padding: 2% 0;
+        width: 100%;
+        margin-left: 0.588em;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+          "name date"
+          "text text"
+          "reactions buttons";
+        .user-detail {
+          grid-area: name;
+          font-family: "SFMedium";
+        }
+
+        .date {
+          text-align: end;
+          grid-area: date;
+          font-size: 0.75em;
+          opacity: 0.5;
+        }
+
+        .comment-text {
+          grid-area: text;
+          line-height: 1.3;
+          margin: 0.235em 0 0.412em 0;
+        }
+
+        .reactions {
+          grid-area: reactions;
+          display: flex;
+          opacity: 0.55;
+          .likes {
+            display: flex;
+            align-items: center;
+
+            .title-comments {
+              font-size: 0.75em;
+            }
+
+            .comments-value {
+              margin: 0 0.5vw;
+              font-size: 0.75em;
+            }
+          }
+
+          .comments-forward {
+            display: flex;
+            align-items: center;
+
+            .title-forwards {
+              font-size: 0.75em;
+            }
+
+            .comments-forward-value {
+              margin: 0 0.5vw;
+              font-size: 0.75em;
+            }
+          }
+
+          .reports {
+            display: flex;
+            align-items: center;
+
+            .title-comments {
+              font-size: 0.75em;
+            }
+
+            .comments-value {
+              margin: 0 0.5vw;
+              font-size: 0.75em;
+            }
+          }
+        }
+
+        .buttons {
+          grid-area: buttons;
+          display: flex;
+          justify-content: flex-end;
+          .block {
+            font-size: 0.75em;
+            cursor: pointer;
+            color: #f65a73;
+            margin: 0 0.781vw 0 0;
+          }
+
+          .remove {
+            font-size: 0.75em;
+            cursor: pointer;
+            color: #007aff;
+          }
+        }
+      }
+    }
+  }
+  .wrap-row:hover {
+    cursor: pointer;
+  }
+
+  .active,
+  .active:hover {
+    cursor: pointer;
+    background: #007aff;
+    color: white;
+
+    .buttons {
+      #block {
+        color: white;
+      }
+
+      #remove {
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .item-list {
+    .wrap-row {
+      .row {
+        .wrap-content {
+          .buttons {
+            .block {
+              margin: 0 0.55vw 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .item-list {
+    .wrap-row {
+      .row {
+        .wrap-content {
+          .buttons {
+            .block {
+              font-size: 0.63em;
+            }
+            .remove {
+              font-size: 0.63em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1049px) {
+  .item-list {
+    .wrap-row {
+      // padding: 0.5vh 1vw 0 1vw;
+
+      .row {
+        .wrap-content {
+          // padding: 3%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .item-list {
+    .wrap-row {
+      padding: 0.5vh 1vw 0 1vw;
+
+      .row {
+        .wrap-content {
+          padding: 2%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .item-list {
+    .wrap-row {
+      padding: 0;
+
+      .row {
+        margin: 0 0.75em;
+        .wrap-content {
+          .buttons {
+            .block {
+              font-size: 0.65em;
+              margin: 0 0.65em 0 0;
+            }
+            .remove {
+              font-size: 0.65em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

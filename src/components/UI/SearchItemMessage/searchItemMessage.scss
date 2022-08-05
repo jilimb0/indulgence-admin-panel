@@ -1,0 +1,173 @@
+.wrap-item-message {
+  padding: 0 1.8vw;
+
+  .item {
+    display: grid;
+    grid-template: 1fr / 20% 80%;
+
+    align-items: center;
+    padding: 1.17em 0;
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: rgba(60, 60, 67, 0.3);
+      transform: translateX(4vw);
+      bottom: 0.05em;
+      height: 0.05em;
+      width: 22em;
+    }
+    .wrap-params {
+      display: grid;
+      grid-template-columns: 73% 27%;
+      grid-template-areas:
+        "name date"
+        "msg status";
+
+      .item-name {
+        grid-area: name;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .item-msg {
+        grid-area: msg;
+        margin: 1% 0 0 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: rgba(60, 60, 67, 0.7);
+        font-size: 0.93em;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+
+      .date {
+        grid-area: date;
+        font-size: 0.75em;
+        align-self: center;
+        justify-self: flex-end;
+        line-height: 1.55em;
+      }
+      .date-new {
+        color: #007aff !important;
+      }
+      .date-read {
+        opacity: 0.5;
+        color: black;
+      }
+
+      .status {
+        grid-area: status;
+        align-self: center;
+        justify-self: flex-end;
+      }
+      .status-new {
+        display: inline-block;
+        background-color: #007aff;
+        border-radius: 50%;
+        width: 0.5em;
+        height: 0.5em;
+      }
+
+      .status-read {
+        visibility: hidden;
+        height: 1.7vw;
+      }
+    }
+  }
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+.active {
+  cursor: pointer;
+  background-color: #007aff;
+  .item {
+    .wrap-params {
+      .item-name {
+        color: white;
+      }
+      .item-msg {
+        color: rgba(255, 255, 255, 0.8) !important;
+      }
+
+      .date-new,
+      .date-read {
+        color: white !important;
+      }
+      .status {
+        background-color: white !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1680px) {
+  .wrap-item-message {
+    .item {
+      // grid-template: 1fr / 22% 68% 10%;
+      &::after {
+        transform: translateX(4.5vw);
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .wrap-item-message {
+    .item {
+      grid-template: 1fr / 25% 75%;
+      &::after {
+        transform: translateX(5.8vw);
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 850px) {
+//   .wrap-item-message {
+//     .item {
+//       &::after {
+//         transform: translateX(8vw);
+//       }
+//     }
+//   }
+// }
+
+@media only screen and (max-width: 850px) {
+  .wrap-item-message {
+    .item {
+      grid-template: 1fr / 12% 88%;
+      &::after {
+        transform: translateX(11vw);
+        width: 50em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .wrap-params {
+    .item-msg {
+      font-size: 0.7em;
+      width: 42vw;
+    }
+  }
+
+  .wrap-item-message {
+    padding: 0 3vw;
+
+    .item {
+      grid-template: 1fr / 20% 80%;
+      padding: 2vh 0;
+      &::after {
+        transform: translateX(18vw);
+      }
+    }
+  }
+}

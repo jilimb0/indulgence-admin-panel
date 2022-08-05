@@ -1,0 +1,14 @@
+<svg id="Person_image" data-name="Person image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Image_midle" data-name="Image midle" cx="50" cy="50" r="50" transform="translate(1263 294)" fill="rgba(60,60,67,0.6)"/>
+    </clipPath>
+  </defs>
+  <g id="Person_image-2" data-name="Person image" transform="translate(-1263 -294)" clip-path="url(#clip-path)">
+    <path id="Icon_open-person" data-name="Icon open-person" d="M33.7,0C24.435,0,16.852,9.437,16.852,21.064S24.435,42.129,33.7,42.129s16.852-9.437,16.852-21.064S42.971,0,33.7,0ZM16.093,42.129A16.869,16.869,0,0,0,0,58.98v8.426H67.406V58.98A16.809,16.809,0,0,0,51.313,42.129c-4.55,5.14-10.785,8.426-17.61,8.426S20.643,47.269,16.093,42.129Z" transform="translate(1279 326.334)" fill="#3c3c43" opacity="0.6"/>
+    <g id="Image_midle-2" data-name="Image midle" transform="translate(1263 294)" fill="none" stroke="#8a8a8e" stroke-width="5">
+      <circle cx="50" cy="50" r="50" stroke="none"/>
+      <circle cx="50" cy="50" r="47.5" fill="none"/>
+    </g>
+  </g>
+</svg>

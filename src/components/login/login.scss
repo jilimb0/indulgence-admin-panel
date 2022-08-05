@@ -1,0 +1,199 @@
+.main-login {
+  background: url("./img/bg.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+
+  .wrap-content {
+    width: 465px;
+    height: 530px;
+    padding: 40px 60px;
+    margin: 10vh 0 0 10vw;
+
+    display: grid;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    border-radius: 20px;
+    position: relative;
+
+    h1 {
+      color: #fff;
+      font-size: 1.588237em;
+    }
+    .main-login__logo {
+      width: 60px;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+
+    form {
+      margin-top: 40px;
+      width: 100%;
+      .label-inp {
+        margin-bottom: 1.5vh;
+        .label-text {
+          color: rgba(235, 235, 245, 0.7);
+        }
+      }
+      input {
+        border-bottom: 1px solid rgba(235, 235, 245, 0.7);
+        color: white;
+        &:focus {
+          border-bottom: 2px solid white;
+          caret-color: white;
+        }
+        &::placeholder {
+          color: rgba(235, 235, 245, 0.7);
+        }
+      }
+
+      .submit {
+        width: 170px;
+        height: 45px;
+        border: 1px solid #fff;
+        border-radius: 20px;
+
+        color: white;
+        font-family: "SFSemibold";
+        &:hover {
+          background-color: #707070;
+          cursor: pointer;
+        }
+      }
+
+      .recover-password {
+        cursor: pointer;
+        margin-top: 15%;
+        text-align: center;
+        color: #0a84ff;
+      }
+
+      #form_recover {
+        display: none;
+        grid-template-rows: 3.5vh 12.2vh 5vh;
+
+        .popup_back {
+          cursor: pointer;
+          position: absolute;
+          top: 7%;
+          &::after,
+          &::before {
+            content: "";
+            width: 3px;
+            height: 15px;
+            border-radius: 2vw;
+            position: absolute;
+            z-index: 2;
+            background: white;
+          }
+          &::after {
+            transform: rotate(40deg);
+          }
+          &::before {
+            top: 9px;
+            transform: rotate(320deg);
+          }
+        }
+        .text {
+          color: rgba(255, 255, 255, 0.5);
+        }
+        .label-inp {
+          margin: 4.4vh 0 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1680px) {
+  .main-login {
+    .wrap-content {
+      padding: 35px 55px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .main-login {
+    .wrap-content {
+      width: 30vw;
+      height: 480px;
+      padding: 30px 50px;
+      form {
+        margin-top: 40px;
+        .submit {
+          width: 160px;
+          height: 40px;
+        }
+        .recover-password {
+          margin-top: 10%;
+        }
+        #form_recover {
+          grid-template-rows: 4.6vh 13.4vh 5vh;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .main-login {
+    .wrap-content {
+      height: 440px;
+      padding: 25px 45px;
+      form {
+        margin-top: 35px;
+        #form_recover {
+          grid-template-rows: 5.8vh 14.4vh 5vh;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1049px) {
+  .main-login {
+    .wrap-content {
+      width: 34vw;
+      height: 430px;
+      form {
+        .submit {
+          width: 145px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .main-login {
+    .wrap-content {
+      width: 80vw;
+      height: 440px;
+    }
+  }
+}
+@media only screen and (max-width: 450px) and (orientation: portrait) {
+  .main-login {
+    .wrap-content {
+      height: 470px;
+      form {
+        .submit {
+          width: 130px;
+          height: 40px;
+        }
+        .recover-password {
+          margin-top: 20%;
+        }
+        #form_recover {
+          grid-template-rows: 8.2vh 17.1vh 5vh;
+        }
+      }
+    }
+  }
+}

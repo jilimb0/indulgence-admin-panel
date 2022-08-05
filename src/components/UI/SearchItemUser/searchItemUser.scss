@@ -1,0 +1,108 @@
+// .wrap-item-user {
+//   padding: 0 1.8vw;
+
+//   .item {
+//     display: grid;
+//     grid-template: 1fr / 15% 70% 15%;
+
+//     align-items: center;
+//     padding: 1.17em 0;
+
+//     border-bottom: 1px solid rgba(60, 60, 67, 0.3);
+
+//     .params {
+//       display: flex;
+//       width: 3.5em;
+//       height: 1.4em;
+
+//       .status {
+//         font-size: 0.75em;
+//         display: grid;
+//         place-items: center;
+//         border-radius: 5px;
+//         height: 100%;
+//         width: 100%;
+//       }
+
+//       .status-active {
+//         color: #50cc57;
+//         border: 1px solid #50cc57;
+//       }
+
+//       .status-blocked {
+//         color: #f65a73;
+//         border: 1px solid #f65a73;
+//         min-width: 5em;
+//       }
+//     }
+//   }
+// }
+
+// .item:hover {
+//   cursor: pointer;
+// }
+
+// .wrap-item-user.active {
+//   cursor: pointer;
+//   background-color: #007aff;
+//   .item-name {
+//     color: white;
+//   }
+//   .item-role {
+//     color: rgba(255, 255, 255, 0.6);
+//   }
+//   .item-email {
+//     color: white;
+//   }
+//   .params {
+//     .status-active {
+//       color: white;
+//       border: 1px solid white;
+//     }
+
+//     .status-blocked {
+//       color: white;
+//       border: 1px solid white;
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: 850px) {
+//   .wrap-item-user {
+//     padding: 0 4vw;
+
+//     .item {
+//       .params {
+//         .status {
+//           min-width: 6vw;
+//           min-height: 2vw;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media only screen and (max-width: 500px) {
+//   .wrap-params {
+//     .item-email {
+//       margin-top: 1%;
+//       color: rgba(0, 0, 0, 0.6);
+//       font-size: 0.65em;
+//     }
+//   }
+//   .wrap-item-user {
+//     .item {
+//       .wrap-params {
+//         margin-left: 1vw;
+//         .item-name {
+//           font-size: 0.9em;
+//         }
+//       }
+//       .params {
+//         .status {
+//           min-width: 12vw;
+//           min-height: 2vh;
+//         }
+//       }
+//     }
+//   }
+// }
